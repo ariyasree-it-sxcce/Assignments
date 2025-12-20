@@ -48,7 +48,7 @@ SELECT name FROM user WHERE city='Chennai';
  --2
 SELECT name FROM user WHERE city NOT IN  ('Bangalore');
 SELECT name FROM user WHERE city != 'Bangalore';
-SELECT name FROM user WHERE city LIKE "Bangalore";
+SELECT name FROM user WHERE city NOT LIKE "Bangalore";
  --3
 SELECT name FROM user WHERE age>25;
 
@@ -88,3 +88,6 @@ SELECT name FROM user WHERE age > (SELECT AVG(age) FROM user);
 
 --15
 SELECT name FROM user WHERE city="Chennai" OR city IS NULL
+
+-- Comment line added
+-- USERS 
