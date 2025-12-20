@@ -90,4 +90,4 @@ SELECT name FROM user WHERE age > (SELECT AVG(age) FROM user);
 SELECT name FROM user WHERE city="Chennai" OR city IS NULL
 
 --command lines
--- added by sankar
+--added by sankar
