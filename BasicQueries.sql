@@ -80,13 +80,13 @@ SELECT name FROM user WHERE city="Chennai" AND name LIKE "%a%";
 --12
 SELECT name FROM user ORDER BY age DESC LIMIT 2;
 
---13
+--13 
 SELECT name FROM user Order By age DESC LIMIT 1 OFFSET 1;
 
 --14
 SELECT name FROM user WHERE age > (SELECT AVG(age) FROM user);
 
---15
+--15 
 SELECT name FROM user WHERE city="Chennai" OR city IS NULL
 
---command lines
+-- command lines
